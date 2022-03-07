@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Formulário</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Seja um dev na plataforma RM" />
+        <meta name="keywords" content="dev, rede social, contato, interação, software, desenvolvimento, programação" >
+        <link href="styles/styles.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="form-container">
+            <div class="form-header">
+                <p class="h1">
+                    Seja um desenvolvedor RM
+                </p>
+            </div><!--form-header-->
+            <form class="form" id="form">
+                <div class="form-section">
+                    <div class="step-indicator">
+                        <span class="number-indicator">
+                            1
+                        </span>
+                        <span class="h3">
+                            Dados pessoais
+                        </span>
+                    </div><!--step-indicator-->
+                    <div class="section-data">
+                        <div class="input-container">
+                            <p class="h5">
+                                Nome completo *
+                            </p>
+                            <input type="text" name="name" required class="h4" />
+                        </div><!--input-container-->
+                        <div class="input-container">
+                            <p class="h5">
+                                E-mail *
+                            </p>
+                            <input type="text" name="email" required class="h4" />
+                        </div><!--input-container-->
+                        <div class="input-container">
+                            <p class="h5">
+                                CPF *
+                            </p>
+                            <input type="text" name="cpf" required class="h4" />
+                        </div><!--input-container-->
+                        <div class="input-container">
+                            <p class="h5">
+                                Data de nascimento *
+                            </p>
+                            <input type="date" name="birth-date" required class="h4" />
+                        </div><!--input-container-->
+                        <div class="input-container">
+                            <p class="h5">
+                                Telefone *
+                            </p>
+                            <input type="tel" name="birth-date" required class="h4" />
+                        </div><!--input-container-->
+                        <div class="input-container">
+                            <p class="h5">
+                                Estado *
+                            </p>
+                            <input type="text" name="state" required class="h4" />
+                        </div><!--input-container-->
+                        <div class="input-container">
+                            <p class="h5">
+                                Cidade *
+                            </p>
+                            <input type="text" name="city" required class="h4" />
+                        </div><!--input-container-->
+                    </div><!--section-data-->
+                </div><!--form-section-->
+                <div class="form-section">
+                    <div class="step-indicator">
+                        <span class="number-indicator">
+                            2
+                        </span>
+                        <span class="h3">
+                            Sobre sua carreira de desenvolvedor
+                        </span>
+                    </div><!--step-indicator-->
+                    <div class="section-data">
+                        <div class="input-container">
+                            <p class="h5">
+                                Você é um desenvolvedor...
+                            </p>
+                            <input type="radio" id="fullstack" name="dev-type" value="fullstack">
+                            <label for="html" class="h4">FullStack</label><br/>
+                            <input type="radio" id="front-end" name="dev-type" value="front-end">
+                            <label for="css" class="h4">Front-End</label><br/>
+                            <input type="radio" id="back-end" name="dev-type" value="back-end">
+                            <label for="javascript" class="h4">Back-End</label>
+                        </div><!--input-container-->
+                        <div class="input-container">
+                            <p class="h5">
+                                GitHub *
+                            </p>
+                            <input type="text" name="github" required class="h4" />
+                        </div><!--input-container-->
+                        <div class="input-container">
+                            <p class="h5">
+                                Linkedin *
+                            </p>
+                            <input type="text" name="linkedin" required class="h4" />
+                        </div><!--input-container-->
+                        <div class="input-container">
+                            <label for="fav-languages" class="h5">
+                                Linguagens e tecnologias preferidas *
+                            </label>
+                            <select name="fav-languages" form="form" required>
+                                <option value="angular">
+                                    Angular
+                                </option>
+                                <option value="html">
+                                    HTML
+                                </option>
+                                <option value="javascript">
+                                    JavaScript
+                                </option>
+                            </select>
+                        </div><!--input-container-->
+                        <div class="input-container">
+                            <p class="h5">
+                                Há quanto tempo atua na área de desenvolvimento *
+                            </p>
+                            <input type="text" name="portfolio" required class="h4" />
+                        </div><!--input-container-->
+                        <div class="input-container">
+                            <p class="h5">
+                                Cite alguns projetos de seu portfólio *
+                            </p>
+                            <input type="text" name="portfolio" required class="h4" />
+                        </div><!--input-container-->
+                        <div class="input-container">
+                            <p class="h5">
+                                Diga um pouco sobre você *
+                            </p>
+                            <input type="text" name="resume" required class="h4" />
+                        </div><!--input-container-->
+                    </div><!--section-data-->
+                </div><!--form-section-->
+                <div class="form-section">
+                    <div class="step-indicator">
+                        <span class="number-indicator">
+                            3
+                        </span>
+                        <span class="h3">
+                            Credenciais de acesso
+                        </span>
+                    </div><!--step-indicator-->
+                    <div class="section-data">
+                        <div class="input-container">
+                            <p class="h5">
+                                Senha *
+                            </p>
+                            <input type="password" name="password" required class="h4" />
+                        </div><!--input-container-->
+                        <div class="input-container">
+                            <p class="h5">
+                                Repetir senha *
+                            </p>
+                            <input type="password" name="password-confirm" required class="h4" />
+                        </div><!--input-container-->
+                    </div><!--section-data-->
+                </div><!--form-section-->
+                <div class="sign-in-confirm">
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="company-policies" />
+                        <label for="company-policies" >Aceitar Termos de Uso e Políticas</label>
+                    </div><!--checkbox-container-->
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="adhesion"/>
+                        <label for="a-ver">Aceitar Termo de Adesão</label>
+                    </div><!--checkbox-container-->
+                    <div class="form-submit">
+                        <input type="submit" name="submit" value="Concluir cadastro" />
+                    </div><!--form-submit-->
+                </div><!--sign-in-confirm-->
+            </form>
+        </div><!--form-container-->
+        <div class="footer">
+            <div class="about-company">
+                <div class="company-contact">
+                    <p>LOREM IPSUM</p>
+                    <p class="h4">
+                        E-mail: loremipsum@*****.*****
+                    </p>
+                    <p class="h4">
+                        Telefone: (**)*****-****
+                    </p>
+                </div><!--company-contact-->
+                <div class="company-details">
+                    <p class="h3">
+                        Nossos produtos
+                    </p>
+                    <a href="">
+                        Aplicativo Lorem Ipsum
+                    </a>
+                    <a href="">
+                        Site Lorem Ipsum
+                    </a>
+                    <a href="">
+                        Lorem Ipsum Newsletter
+                    </a>
+                </div><!--company-details-->
+                <div class="company-details">
+                    <p class="h3">
+                        Transparência
+                    </p>
+                    <button>
+                        <p class="h4">
+                            Políticas e Termos de Uso
+                        </p>
+                    </button>
+                </div><!--company-details-->
+            </div>
+            <div class="copyright">
+                <p class="h4">
+                    Landing Page para prática e estudo
+                </p>
+                <p class="h4">
+                    Um produto Robert-Martins
+                </p>
+            </div>
+        </div><!--footer-->
+    </body>
+</html>

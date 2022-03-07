@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+.h1{
+    font-size: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.h2{
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.h3{
+    font-size: 18.72px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.h4{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.h5{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0.72;
+}
+
+.form-container{
+    background-color: white;
+    border: #ff9200 1px solid;
+    margin: 24px 144px;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.form-header{
+    padding: 24px 0;
+    text-align: center;
+    margin: 0 48px;
+    border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+}
+
+.form-section{
+    padding: 24px 0;
+    margin: 0 48px;
+    border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+}
+
+.number-indicator{
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: #ff9200;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    margin-right: 12px;
+    box-sizing: border-box;
+}
+
+.section-data{
+    padding: 24px;
+
+}
+
+.input-container{
+    display: inline-block;
+    margin: 12px;
+    vertical-align: top;
+}
+
+.input-container input, .input-container select, .input-container input:hover, .input-container input:focus{
+    outline: 0;
+    border: 0;
+    border-left: #ff9200 solid 2px;
+    border-bottom: #ff9200 solid 1px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 6px 0;
+    padding: 6px;
+    outline: 0;
+}
+
+.input-container select{
+    margin: 6px 0;
+}
+
+select{
+    display: block;
+}
+
+.sign-in-confirm{
+    padding: 24px 0;
+    margin: 0 48px;
+}
+
+.checkbox-container{
+    margin-top: 8px;
+}
+
+.checkbox-container label{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0.9;
+}
+
+.form-submit{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-submit input{
+    background-color: #ff9200;
+    color: white;
+    cursor: pointer;
+    outline: 0;
+    box-sizing: border-box;
+    border: #ff9200 solid 1px;
+    border-radius: 10px;
+    font-size: 18,72px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 8px 32px;
+    display: inline-block;
+}
+
+.form-submit input[type=submit]:focus, .form-submit input[type=submit]:hover{
+    background-color: white;
+    color:#ff9200;
+    cursor: pointer;
+    outline: 0;
+    box-sizing: border-box;
+    border: #ff9200 solid 1px;
+    border-radius: 10px;
+    font-size: 0.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 8px 32px;
+    display: inline-block;
+}
+
+.footer{
+    background-color: #ff6200;
+    color: white;
+    padding-top: 32px;
+}
+
+.about-company{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 12px;
+}
+
+.company-contact , .company-details{
+    float: left;
+    margin: 0 48px;
+}
+
+.company-contact img{
+    width: 208px;
+    height: 115px;
+    margin-bottom: 12px;
+}
+
+.company-details p{
+    margin-bottom: 16px;
+}
+
+.company-details a{
+    text-decoration: none;
+    font-size: 16;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.company-details button, button:focus, button:hover{
+    display: block;
+    outline: none;
+    border: none;
+    background-color: #ff6200;
+    color: white;
+    cursor:pointer;
+}
+
+.copyright{
+    width: 90%;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left:auto;
+    border-top: white 1px solid;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 16px 0;
+}
+
+@media screen and (max-width: 1312px) {
+
+
+
+}
+
+@media screen and (max-width: 920px) {
+
+    .testimonial{
+        padding: 16px 48px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    
+    .footer{
+        padding-top: 16px;
+    }
+    
+    .company-contact, .company-details {
+        float: none;
+        margin: 32px 24px;
+    }
+
+    .copyright{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 612px) {
+    .testimonial{
+        padding: 16px 24px;
+    }
+}
