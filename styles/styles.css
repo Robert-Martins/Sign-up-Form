@@ -204,13 +204,27 @@ select{
     padding: 16px 0;
 }
 
-@media screen and (max-width: 1312px) {
+@media screen and (max-width: 1320px) {
 
+    .form-container{
+        margin: 24px 64px;
+    }
 
+}
+
+@media screen and (max-width: 1186px) {
+
+    .form-container {
+        margin: 24px 32px;
+    }
 
 }
 
 @media screen and (max-width: 920px) {
+
+    .form-container {
+        margin: 24px 24px;
+    }
 
     .testimonial{
         padding: 16px 48px;
@@ -219,6 +233,10 @@ select{
 
 @media screen and (max-width: 900px) {
     
+    .form-container {
+        margin: 16px 16px;
+    }
+
     .footer{
         padding-top: 16px;
     }
