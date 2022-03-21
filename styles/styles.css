@@ -60,7 +60,7 @@ html,body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     background-color: #ff9200;
-    border-radius: 50%;
+    border-radius: 12px;
     width: 24px;
     height: 24px;
     text-align: center;
@@ -79,7 +79,7 @@ html,body{
     vertical-align: top;
 }
 
-.input-container input, .input-container select, .input-container input:hover, .input-container input:focus{
+.input-container input, .input-container select{
     outline: 0;
     border: 0;
     border-left: #ff9200 solid 2px;
@@ -90,6 +90,12 @@ html,body{
     margin: 6px 0;
     padding: 6px;
     outline: 0;
+}
+
+.input-container input:hover, .input-container input:focus{
+    border-left: #ff6200 solid 2px;
+    border-bottom: #ff6200 solid 1px;
+    transition: 0.2s;
 }
 
 .input-container select{
@@ -138,14 +144,8 @@ select{
     background-color: white;
     color:#ff9200;
     cursor: pointer;
-    outline: 0;
-    box-sizing: border-box;
     border: #ff9200 solid 1px;
-    border-radius: 10px;
-    font-size: 0.5em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 8px 32px;
-    display: inline-block;
+    transition: 0.3s;
 }
 
 .footer{
@@ -184,7 +184,12 @@ select{
     margin-bottom: 4px;
 }
 
-.company-details button, button:focus, button:hover{
+.company-details a:hover, .company-details a:focus, .company-details button:focus, .company-details button:hover{
+    color: black;
+    transition:0.4s;
+}
+
+.company-details button{
     display: block;
     outline: none;
     border: none;
