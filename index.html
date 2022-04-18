@@ -10,219 +10,148 @@
         <link href="styles/styles.css" type="text/css" rel="stylesheet"/>
     </head>
     <body>
-        <main class="form-container">
-            <header class="form-header">
-                <p class="h1">
-                    Seja um desenvolvedor RM
-                </p>
-            </header><!--form-header-->
-            <form class="form" id="form">
-                <section class="form-section">
-                    <div class="step-indicator">
-                        <span class="number-indicator">
-                            1
-                        </span>
-                        <span class="h3">
-                            Dados pessoais
-                        </span>
-                    </div><!--step-indicator-->
-                    <div class="section-data">
-                        <div class="input-container">
-                            <p class="h5">
-                                Nome completo *
-                            </p>
-                            <input type="text" name="name" required class="h4" />
-                        </div><!--input-container-->
-                        <div class="input-container">
-                            <p class="h5">
-                                E-mail *
-                            </p>
-                            <input type="text" name="email" required class="h4" />
-                        </div><!--input-container-->
-                        <div class="input-container">
-                            <p class="h5">
-                                CPF *
-                            </p>
-                            <input type="text" name="cpf" required class="h4" />
-                        </div><!--input-container-->
-                        <div class="input-container">
-                            <p class="h5">
-                                Data de nascimento *
-                            </p>
-                            <input type="date" name="birth-date" required class="h4" />
-                        </div><!--input-container-->
-                        <div class="input-container">
-                            <p class="h5">
-                                Telefone *
-                            </p>
-                            <input type="tel" name="birth-date" required class="h4" />
-                        </div><!--input-container-->
-                        <div class="input-container">
-                            <p class="h5">
-                                Estado *
-                            </p>
-                            <input type="text" name="state" required class="h4" />
-                        </div><!--input-container-->
-                        <div class="input-container">
-                            <p class="h5">
-                                Cidade *
-                            </p>
-                            <input type="text" name="city" required class="h4" />
-                        </div><!--input-container-->
-                    </div><!--section-data-->
-                </section><!--form-section-->
-                <section class="form-section">
-                    <div class="step-indicator">
-                        <span class="number-indicator">
-                            2
-                        </span>
-                        <span class="h3">
-                            Sobre sua carreira de desenvolvedor
-                        </span>
-                    </div><!--step-indicator-->
-                    <div class="section-data">
-                        <div class="input-container">
-                            <p class="h5">
-                                Você é um desenvolvedor...
-                            </p>
-                            <input type="radio" id="fullstack" name="dev-type" value="fullstack">
-                            <label for="html" class="h4">FullStack</label><br/>
-                            <input type="radio" id="front-end" name="dev-type" value="front-end">
-                            <label for="css" class="h4">Front-End</label><br/>
-                            <input type="radio" id="back-end" name="dev-type" value="back-end">
-                            <label for="javascript" class="h4">Back-End</label>
-                        </div><!--input-container-->
-                        <div class="input-container">
-                            <p class="h5">
-                                GitHub *
-                            </p>
-                            <input type="text" name="github" required class="h4" />
-                        </div><!--input-container-->
-                        <div class="input-container">
-                            <p class="h5">
-                                Linkedin *
-                            </p>
-                            <input type="text" name="linkedin" required class="h4" />
-                        </div><!--input-container-->
-                        <div class="input-container">
-                            <label for="fav-languages" class="h5">
-                                Linguagens e tecnologias preferidas *
-                            </label>
-                            <select name="fav-languages" form="form" required>
-                                <option value="angular">
-                                    Angular
-                                </option>
-                                <option value="html">
-                                    HTML
-                                </option>
-                                <option value="javascript">
-                                    JavaScript
-                                </option>
-                            </select>
-                        </div><!--input-container-->
-                        <div class="input-container">
-                            <p class="h5">
-                                Há quanto tempo atua na área de desenvolvimento *
-                            </p>
-                            <input type="text" name="portfolio" required class="h4" />
-                        </div><!--input-container-->
-                        <div class="input-container">
-                            <p class="h5">
-                                Cite alguns projetos de seu portfólio *
-                            </p>
-                            <input type="text" name="portfolio" required class="h4" />
-                        </div><!--input-container-->
-                        <div class="input-container">
-                            <p class="h5">
-                                Diga um pouco sobre você *
-                            </p>
-                            <input type="text" name="resume" required class="h4" />
-                        </div><!--input-container-->
-                    </div><!--section-data-->
-                </section><!--form-section-->
-                <section class="form-section">
-                    <div class="step-indicator">
-                        <span class="number-indicator">
-                            3
-                        </span>
-                        <span class="h3">
-                            Credenciais de acesso
-                        </span>
-                    </div><!--step-indicator-->
-                    <div class="section-data">
-                        <div class="input-container">
-                            <p class="h5">
-                                Senha *
-                            </p>
-                            <input type="password" name="password" required class="h4" />
-                        </div><!--input-container-->
-                        <div class="input-container">
-                            <p class="h5">
-                                Repetir senha *
-                            </p>
-                            <input type="password" name="password-confirm" required class="h4" />
-                        </div><!--input-container-->
-                    </div><!--section-data-->
-                </section><!--form-section-->
-                <div class="sign-in-confirm">
-                    <div class="checkbox-container">
-                        <input type="checkbox" name="company-policies" />
-                        <label for="company-policies" >Aceitar Termos de Uso e Políticas</label>
-                    </div><!--checkbox-container-->
-                    <div class="checkbox-container">
-                        <input type="checkbox" name="adhesion"/>
-                        <label for="a-ver">Aceitar Termo de Adesão</label>
-                    </div><!--checkbox-container-->
-                    <div class="form-submit">
-                        <input type="submit" name="submit" value="Concluir cadastro" />
-                    </div><!--form-submit-->
-                </div><!--sign-in-confirm-->
-            </form>
-        </main><!--form-container-->
-        <footer class="footer">
-            <div class="about-company">
-                <div class="company-contact">
-                    <p>LOREM IPSUM</p>
-                    <p class="h4">
-                        E-mail: loremipsum@*****.*****
-                    </p>
-                    <p class="h4">
-                        Telefone: (**)*****-****
-                    </p>
-                </div><!--company-contact-->
-                <div class="company-details">
-                    <p class="h3">
-                        Nossos produtos
-                    </p>
-                    <a href="">
-                        Aplicativo Lorem Ipsum
-                    </a>
-                    <a href="">
-                        Site Lorem Ipsum
-                    </a>
-                    <a href="">
-                        Lorem Ipsum Newsletter
-                    </a>
-                </div><!--company-details-->
-                <div class="company-details">
-                    <p class="h3">
-                        Transparência
-                    </p>
-                    <button>
-                        <p class="h4">
-                            Políticas e Termos de Uso
-                        </p>
-                    </button>
-                </div><!--company-details-->
-            </div>
-            <div class="copyright">
-                <p class="h4">
-                    Landing Page para prática e estudo
-                </p>
-                <p class="h4">
-                    Um produto Robert-Martins
-                </p>
-            </div>
-        </footer><!--footer-->
+        <section class="sign-up-steps-indicator">
+            <div class="company-info">
+                <div class="company-logo"></div><!--company-logo-->
+                <h3>
+                    Untitled UI
+                </h3>
+            </div><!--company-info-->
+            <div class="steps-indicator">
+                <button class="step-indicator-btn">
+                    <div class="bullet-indicator">
+                        <div class="bullet-indicator-current"></div><!--bullet-indicator-check-->
+                    </div><!--bullet-indicator-->
+                    <div class="step-indicator-btn-text">
+                        <h5>
+                            Seus detalhes
+                        </h5>
+                        <h6>
+                            Forneça, por favor, seu nome e melhor e-mail
+                        </h6>
+                    </div><!--step-indicator-btn-text-->
+                </button>
+                <button class="step-indicator-btn">
+                    <div class="bullet-indicator-todo-container">
+                        <div class="bullet-indicator-todo"></div><!--bullet-indicator-check-->
+                    </div><!--bullet-indicator-->
+                    <div class="step-indicator-btn-text">
+                        <h5>
+                            Escolha uma senha
+                        </h5>
+                        <h6>
+                            Escolha uma senha segura
+                        </h6>
+                    </div><!--step-indicator-btn-text-->
+                </button>
+                <button class="step-indicator-btn">
+                    <div class="bullet-indicator-todo-container">
+                        <div class="bullet-indicator-todo"></div><!--bullet-indicator-check-->
+                    </div><!--bullet-indicator-->
+                    <div class="step-indicator-btn-text">
+                        <h5>
+                            Convide seus amigos
+                        </h5>
+                        <h6>
+                            Inicie uma nova rede de interações
+                        </h6>
+                    </div><!--step-indicator-btn-text-->
+                </button>
+                <button class="step-indicator-btn">
+                    <div class="bullet-indicator-todo-container">
+                        <div class="bullet-indicator-todo"></div><!--bullet-indicator-check-->
+                    </div><!--bullet-indicator-->
+                    <div class="step-indicator-btn-text">
+                        <h5>
+                            Sincronize com suas redes sociais
+                        </h5>
+                        <h6>
+                            Compartilhe posts entre suas redes sociais
+                        </h6>
+                    </div><!--step-indicator-btn-text-->
+                </button>
+            </div><!--steps-indicator-->
+            <footer>
+                <h6>
+                    @Robert-Martins
+                </h6>
+            </footer>
+        </section>
+        <section class="sign-up-steps">
+            <div class="form-container">
+                <form id="sign-up-form">
+                    <div class="form-step-container" id="form-step">
+                        <div class="company-logo"></div><!--company-logo-->
+                        <h1>
+                            Seus detalhes
+                        </h1>
+                        <h5>
+                            Forneça seu nome e seu e-mail
+                        </h5>
+                        <input type="text" name="name" required placeholder="Digite seu nome" />
+                        <input type="text" name="email" required placeholder="Digite seu melhor e-mail" />
+                        <button class="step-submit">
+                            Continuar
+                        </button>
+                    </div><!--form-step-container-->
+                    <div class="form-step-container" id="form-step">
+                        <div class="company-logo"></div><!--company-logo-->
+                        <h1>
+                            Escolha uma senha
+                        </h1>
+                        <h5>
+                            A senha deve possuir no mínimo 8 caracteres
+                        </h5>
+                        <input type="password" name="password" required placeholder="Digite sua senha" />
+                        <input type="password" name="password-confirm" required placeholder="Confirme sua senha" />
+                        <button class="step-submit">
+                            Continuar
+                        </button>
+                    </div><!--form-step-container-->
+                    <div class="form-step-container" id="form-step">
+                        <div class="company-logo"></div><!--company-logo-->
+                        <h1>
+                            Convide seus amigos
+                        </h1>
+                        <h5>
+                            Inicie uma nova rede de interações
+                        </h5>
+                        <h6>
+                            Insira os e-mails dos amigos que deseja convidar
+                        </h6>
+                        <input type="text" name="invite-email" placeholder="Insira o e-mail de um amigo" />
+                        <h6>
+                            Caso já tenha convidado seus amigos ou não queria:
+                        </h6>
+                        <button class="step-submit">
+                            Continuar
+                        </button>
+                    </div><!--form-step-container-->
+                    <div class="form-step-container" id="form-step">
+                        <div class="company-logo"></div><!--company-logo-->
+                        <h1>
+                            Sincronize com suas redes sociais
+                        </h1>
+                        <h5>
+                            Compartilhe posts entre suas redes sociais
+                        </h5>
+                        <input type="text" name="Instagram" placeholder="Digite seu Instagram" />
+                        <input type="text" name="Facebook" placeholder="Digite seu Facebook" />
+                        <input type="text" name="LinkedIn" placeholder="Digite seu LinkedIn" />
+                        <input type="text" name="Discord" placeholder="Digite seu Discord" />
+                        <input type="submit" name="submit" value="Finalizar" />
+                    </div><!--form-step-container-->
+                </form>
+            </div><!--form-container-->
+            <div class="bar-nav-container">
+                <button class="bar-nav-btn" id="bar-nav-btn"></button>
+                <button class="bar-nav-btn" id="bar-nav-btn"></button>
+                <button class="bar-nav-btn" id="bar-nav-btn"></button>
+                <button class="bar-nav-btn" id="bar-nav-btn"></button>
+            </div><!--bar-nav-container-->
+        </section>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="js/functions.js"></script>
     </body>
 </html>
