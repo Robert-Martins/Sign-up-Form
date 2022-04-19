@@ -3,6 +3,7 @@ $(document).ready(function(){
     //Variáveis do formulário
 
     var currentStep = 0;
+    var concludedStep = 0;
 
     const signUpInit = () =>{
         $('#form-container #form-step').eq(currentStep).stop().fadeIn()
@@ -13,6 +14,7 @@ $(document).ready(function(){
         $('#form-container #form-step').eq(currentStep).stop().fadeOut(100)
         $('#bar-nav-container #bar-nav-btn').eq(currentStep).removeClass('selected')
         currentStep += 1
+        concludedStep += 1
         $('#form-container #form-step').eq(currentStep).stop().fadeIn(2000)
         $('#bar-nav-container #bar-nav-btn').eq(currentStep).addClass('selected')
     }
@@ -54,11 +56,12 @@ $(document).ready(function(){
 
         if(name.length > 0 && email.length > 0){
             if(nameValidation(name) == false){
-                $('input[name=name]').css('border', 'rgba(255, 0, 0, 0.05) 2px solid')
+                $('input[name=name]').addClass('invalid')
             }
             else{
+                $('input[name=name]').removeClass('invalid')
                 if(emailValidation(email) == false){
-                    $('input[name=email]').css('border', 'rgba(255, 0, 0, 0.05) 2px solid')
+                    $('input[name=email]').addClass('invalid')
                 }
                 else{
                     return true
@@ -73,13 +76,20 @@ $(document).ready(function(){
 
         if(password.length > 0 && passwordConfirm.length > 0){
             if(passwordValidation(password, passwordConfirm) == false){
-                $('input#password').css('border', 'rgba(255, 0, 0, 0.05) 2px solid')
-                $('input#password-confirm').css('border', 'rgba(255, 0, 0, 0.05) 2px solid')
+                $('input#password').addClass('invalid')
+                $('input#password-confirm').addClass('invalid')
             }
             else{
+                $('input#password').removeClass('invalid')
+                $('input#password-confirm').removeClass('invalid')
                 return true
             }
         }
+    }
+
+    const signUpConfirm = () =>{
+        closeModal()
+        //window.location.replace("signUpComplete.html")
     }
 
     $('button#first-step-submit').click(function(e){
@@ -103,10 +113,23 @@ $(document).ready(function(){
         updateStep()
     })
 
+    $('input#signup-submit').click(function(e){
+        e.preventDefault()
+        openModal()
+    })
+
+    $('#modal-container #no-submit').click(function(){
+        closeModal()
+    })
+
+    $('#modal-container #submit').click(function(){
+        signUpConfirm()
+    })
+
     //Funções de navegação entre steps
 
     const stepNavigation = (index) =>{
-        if(index != currentStep){
+        if(index != currentStep && index <= concludedStep){
             $('#form-container #form-step').eq(currentStep).stop().fadeOut(100)
             $('#bar-nav-container #bar-nav-btn').eq(currentStep).removeClass('selected')
             currentStep = index
@@ -128,15 +151,17 @@ $(document).ready(function(){
     //Funções referentes à modal de confirmação de cadastro
 
     const openModal = () =>{
-
+        $('#modal-container').fadeIn()
     }
 
     const closeModal = () =>{
-
+        $('#modal-container').fadeOut()
     }
 
-    const confirmSignUp = () =>{
-
-    }
+    $('#modal-container').on('click',function(e){
+        if(!(($(e.target).closest("#modal").length > 0))){
+            closeModal()
+        }
+    })
 
 })

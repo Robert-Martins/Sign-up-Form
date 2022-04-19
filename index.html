@@ -19,8 +19,8 @@
             </div><!--company-info-->
             <div class="steps-indicator" id="steps-indicator">
                 <button class="step-indicator-btn" id="step-indicator-btn">
-                    <div class="bullet-indicator">
-                        <div class="bullet-indicator-current"></div><!--bullet-indicator-check-->
+                    <div class="bullet-indicator" id="bullet-ouder-border">
+                        <div class="bullet-indicator-current" id="bullet-inner-border"></div><!--bullet-indicator-check-->
                     </div><!--bullet-indicator-->
                     <div class="step-indicator-btn-text">
                         <h5>
@@ -32,8 +32,8 @@
                     </div><!--step-indicator-btn-text-->
                 </button>
                 <button class="step-indicator-btn" id="step-indicator-btn">
-                    <div class="bullet-indicator-todo-container">
-                        <div class="bullet-indicator-todo"></div><!--bullet-indicator-check-->
+                    <div class="bullet-indicator-todo-container" id="bullet-ouder-border">
+                        <div class="bullet-indicator-todo" id="bullet-inner-border"></div><!--bullet-indicator-check-->
                     </div><!--bullet-indicator-->
                     <div class="step-indicator-btn-text">
                         <h5>
@@ -45,8 +45,8 @@
                     </div><!--step-indicator-btn-text-->
                 </button>
                 <button class="step-indicator-btn" id="step-indicator-btn">
-                    <div class="bullet-indicator-todo-container">
-                        <div class="bullet-indicator-todo"></div><!--bullet-indicator-check-->
+                    <div class="bullet-indicator-todo-container" id="bullet-ouder-border">
+                        <div class="bullet-indicator-todo" id="bullet-inner-border"></div><!--bullet-indicator-check-->
                     </div><!--bullet-indicator-->
                     <div class="step-indicator-btn-text">
                         <h5>
@@ -58,8 +58,8 @@
                     </div><!--step-indicator-btn-text-->
                 </button>
                 <button class="step-indicator-btn" id="step-indicator-btn">
-                    <div class="bullet-indicator-todo-container">
-                        <div class="bullet-indicator-todo"></div><!--bullet-indicator-check-->
+                    <div class="bullet-indicator-todo-container" id="bullet-ouder-border">
+                        <div class="bullet-indicator-todo" id="bullet-inner-border"></div><!--bullet-indicator-check-->
                     </div><!--bullet-indicator-->
                     <div class="step-indicator-btn-text">
                         <h5>
@@ -142,6 +142,21 @@
                         <input type="submit" name="submit" value="Finalizar" id="signup-submit" />
                     </div><!--form-step-container-->
                 </form>
+                <div class="form-step-container" id="sign-up-concluded">
+                    <div class="company-logo"></div><!--company-logo-->
+                    <h1>
+                        Cadastro concluído
+                    </h1>
+                    <h5>
+                        Você receberá um e-mail de confirmação para acesso à nossa plataforma
+                    </h5>
+                    <button class="step-submit">
+                        Ir para a tela de login
+                    </button>
+                    <button class="step-submit">
+                        Voltar à home
+                    </button>
+                </div><!--form-step-container-->
             </div><!--form-container-->
             <div class="bar-nav-container" id="bar-nav-container">
                 <button class="bar-nav-btn" id="bar-nav-btn"></button>
@@ -150,7 +165,33 @@
                 <button class="bar-nav-btn" id="bar-nav-btn"></button>
             </div><!--bar-nav-container-->
         </section>
-        
+
+        <!--Modal de confirmação de cadastro-->
+        <div class="modal-container" id="modal-container">
+            <div class="modal">
+                <div class="modal-header">
+                    <h2>
+                        Deseja concluir seu cadastro?
+                    </h2>
+                    <h4>
+                        Ao pressionar 'Sim' os seus dados serão registrados e 
+                        só poderão ser editados no seu perfil em nossa plataforma.
+                    </h4>
+                </div><!--modal-header-->
+                <div class="modal-body">
+                    <h5>
+                        Deseja continuar?
+                    </h5>
+                    <button class="step-submit" id="not-submit">
+                        Ainda não
+                    </button>
+                    <button class="step-submit" id="submit">
+                        Continuar
+                    </button> 
+                </div><!--modal-body-->
+            </div><!--modal-->
+        </div><!--modal-container-->
+
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="js/functions.js"></script>
     </body>
