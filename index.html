@@ -10,15 +10,15 @@
         <link href="styles/styles.css" type="text/css" rel="stylesheet"/>
     </head>
     <body>
-        <section class="sign-up-steps-indicator">
+        <section class="sign-up-steps-indicator" >
             <div class="company-info">
                 <div class="company-logo"></div><!--company-logo-->
                 <h3>
                     Untitled UI
                 </h3>
             </div><!--company-info-->
-            <div class="steps-indicator">
-                <button class="step-indicator-btn">
+            <div class="steps-indicator" id="steps-indicator">
+                <button class="step-indicator-btn" id="step-indicator-btn">
                     <div class="bullet-indicator">
                         <div class="bullet-indicator-current"></div><!--bullet-indicator-check-->
                     </div><!--bullet-indicator-->
@@ -31,7 +31,7 @@
                         </h6>
                     </div><!--step-indicator-btn-text-->
                 </button>
-                <button class="step-indicator-btn">
+                <button class="step-indicator-btn" id="step-indicator-btn">
                     <div class="bullet-indicator-todo-container">
                         <div class="bullet-indicator-todo"></div><!--bullet-indicator-check-->
                     </div><!--bullet-indicator-->
@@ -44,7 +44,7 @@
                         </h6>
                     </div><!--step-indicator-btn-text-->
                 </button>
-                <button class="step-indicator-btn">
+                <button class="step-indicator-btn" id="step-indicator-btn">
                     <div class="bullet-indicator-todo-container">
                         <div class="bullet-indicator-todo"></div><!--bullet-indicator-check-->
                     </div><!--bullet-indicator-->
@@ -57,7 +57,7 @@
                         </h6>
                     </div><!--step-indicator-btn-text-->
                 </button>
-                <button class="step-indicator-btn">
+                <button class="step-indicator-btn" id="step-indicator-btn">
                     <div class="bullet-indicator-todo-container">
                         <div class="bullet-indicator-todo"></div><!--bullet-indicator-check-->
                     </div><!--bullet-indicator-->
@@ -78,7 +78,7 @@
             </footer>
         </section>
         <section class="sign-up-steps">
-            <div class="form-container">
+            <div class="form-container" id="form-container">
                 <form id="sign-up-form">
                     <div class="form-step-container" id="form-step">
                         <div class="company-logo"></div><!--company-logo-->
@@ -90,7 +90,7 @@
                         </h5>
                         <input type="text" name="name" required placeholder="Digite seu nome" />
                         <input type="text" name="email" required placeholder="Digite seu melhor e-mail" />
-                        <button class="step-submit">
+                        <button class="step-submit" id="first-step-submit">
                             Continuar
                         </button>
                     </div><!--form-step-container-->
@@ -104,7 +104,7 @@
                         </h5>
                         <input type="password" name="password" required placeholder="Digite sua senha" />
                         <input type="password" name="password-confirm" required placeholder="Confirme sua senha" />
-                        <button class="step-submit">
+                        <button class="step-submit" id="second-step-submit">
                             Continuar
                         </button>
                     </div><!--form-step-container-->
@@ -123,7 +123,7 @@
                         <h6>
                             Caso já tenha convidado seus amigos ou não queria:
                         </h6>
-                        <button class="step-submit">
+                        <button class="step-submit" id="third-step-submit">
                             Continuar
                         </button>
                     </div><!--form-step-container-->
@@ -139,11 +139,11 @@
                         <input type="text" name="Facebook" placeholder="Digite seu Facebook" />
                         <input type="text" name="LinkedIn" placeholder="Digite seu LinkedIn" />
                         <input type="text" name="Discord" placeholder="Digite seu Discord" />
-                        <input type="submit" name="submit" value="Finalizar" />
+                        <input type="submit" name="submit" value="Finalizar" id="signup-submit" />
                     </div><!--form-step-container-->
                 </form>
             </div><!--form-container-->
-            <div class="bar-nav-container">
+            <div class="bar-nav-container" id="bar-nav-container">
                 <button class="bar-nav-btn" id="bar-nav-btn"></button>
                 <button class="bar-nav-btn" id="bar-nav-btn"></button>
                 <button class="bar-nav-btn" id="bar-nav-btn"></button>

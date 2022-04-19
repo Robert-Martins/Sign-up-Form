@@ -49,6 +49,17 @@ h6{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.sign-up-steps-indicator{
+    width: 36%;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 42px 36px;
+    background-color: #422F7E;
+    position: relative;
+    color: white;
+}
+
 .company-info{
     display: flex;
 }
@@ -61,17 +72,6 @@ h6{
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: 12px;
-}
-
-.sign-up-steps-indicator{
-    width: 36%;
-    height: 100%;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    padding: 42px 36px;
-    background-color: #422F7E;
-    position: relative;
-    color: white;
 }
 
 .steps-indicator{
@@ -228,4 +228,37 @@ footer{
 .bar-nav-container .selected{
     border: #422F7E 3px solid;
     transition: 1s;
+}
+
+@media screen and (max-width: 1140px) {
+
+    body{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sign-up-steps-indicator{
+        display: none;
+    }
+
+    .sign-up-steps{
+        width: 100%;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+}
+
+@media screen and (max-height: 762px) {
+    .form-container{
+        top: 5%
+    }
+}
+
+@media screen and (max-height: 512px) {
+    .form-container{
+        top: 32px
+    }
+    .bar-nav-container{
+        bottom: 32px
+    }
 }
