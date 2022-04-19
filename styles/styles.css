@@ -1,263 +1,326 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html,body{
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.01);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
-.h1{
+body{
+    padding: 12px;
+    display: flex;
+}
+
+h1{
     font-size: 32px;
+    font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.h2{
+h2{
     font-size: 24px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.h3{
+h3{
     font-size: 18.72px;
+    font-weight: 400;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.h4{
+h4{
     font-size: 16px;
+    font-weight: 400;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.h5{
+h5{
     font-size: 14px;
+    font-weight: 400;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    opacity: 0.72;
 }
 
-.form-container{
-    background-color: white;
-    border: #ff9200 1px solid;
-    margin: 24px 144px;
-    box-sizing: border-box;
-    border-radius: 16px;
-}
-
-.form-header{
-    padding: 24px 0;
-    text-align: center;
-    margin: 0 48px;
-    border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
-}
-
-.form-section{
-    padding: 24px 0;
-    margin: 0 48px;
-    border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
-}
-
-.number-indicator{
-    font-size: 1rem;
+h6{
+    font-size: 14px;
+    font-weight: 400;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sign-up-steps-indicator{
+    width: 36%;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 42px 36px;
+    background-color: #422F7E;
+    position: relative;
     color: white;
-    background-color: #ff9200;
-    border-radius: 12px;
+}
+
+.company-info{
+    display: flex;
+}
+
+.company-logo{
     width: 24px;
     height: 24px;
-    text-align: center;
+    background-image: url('../assets/company-logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     margin-right: 12px;
-    box-sizing: border-box;
 }
 
-.section-data{
-    padding: 24px;
-
+.steps-indicator{
+    margin-top: 84px;
+    border-left: white 2px solid;
 }
 
-.input-container{
-    display: inline-block;
-    margin: 12px;
-    vertical-align: top;
-}
-
-.input-container input, .input-container select{
-    outline: 0;
+.step-indicator-btn{
     border: 0;
-    border-left: #ff9200 solid 2px;
-    border-bottom: #ff9200 solid 1px;
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
-    margin: 6px 0;
-    padding: 6px;
-    outline: 0;
-}
-
-.input-container input:hover, .input-container input:focus{
-    border-left: #ff6200 solid 2px;
-    border-bottom: #ff6200 solid 1px;
-    transition: 0.2s;
-}
-
-.input-container select{
-    margin: 6px 0;
-}
-
-select{
-    display: block;
-}
-
-.sign-in-confirm{
-    padding: 24px 0;
-    margin: 0 48px;
-}
-
-.checkbox-container{
-    margin-top: 8px;
-}
-
-.checkbox-container label{
-    font-size: 14px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    opacity: 0.9;
-}
-
-.form-submit{
-    margin-top: 20px;
-    text-align: center;
-}
-
-.form-submit input{
-    background-color: #ff9200;
+    background: #422F7E;
     color: white;
-    cursor: pointer;
-    outline: 0;
-    box-sizing: border-box;
-    border: #ff9200 solid 1px;
-    border-radius: 10px;
-    font-size: 18,72px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 8px 32px;
-    display: inline-block;
+    display: flex;
+    text-align: initial;
+    margin-bottom: 42px;
+    transform: translate(-12.5px, 0px);
 }
 
-.form-submit input[type=submit]:focus, .form-submit input[type=submit]:hover{
+.step-indicator-btn h5{
+    margin-bottom: 8px;
+}
+
+.step-indicator-btn:hover{
+    cursor: pointer;
+}
+
+.bullet-indicator{
     background-color: white;
-    color:#ff9200;
-    cursor: pointer;
-    border: #ff9200 solid 1px;
-    transition: 0.3s;
+    border: #422F7E 2px solid;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.footer{
-    background-color: #ff6200;
-    color: white;
-    padding-top: 32px;
+.bullet-indicator-check{
+    background-image: url('../assets/check.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
 }
 
-.about-company{
-    display: inline-block;
-    box-sizing: border-box;
+.bullet-indicator-current{
+    background-color: #422F7E;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.bullet-indicator-todo-container{
+    background-color: #422F7E;
+    border: #ffffff 1px solid;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bullet-indicator-todo{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+footer{
+    position: absolute;
+    bottom: 42px;
+    left: 36px;
+}
+
+.sign-up-steps{
+    background-color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 64%;
+    height: 100%;
+    position: relative;
     padding: 12px;
 }
 
-.company-contact , .company-details{
-    float: left;
-    margin: 0 48px;
-}
-
-.company-contact img{
-    width: 208px;
-    height: 115px;
-    margin-bottom: 12px;
-}
-
-.company-details p{
-    margin-bottom: 16px;
-}
-
-.company-details a{
-    text-decoration: none;
-    font-size: 16;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: block;
-    margin-bottom: 4px;
-}
-
-.company-details a:hover, .company-details a:focus, .company-details button:focus, .company-details button:hover{
-    color: black;
-    transition:0.4s;
-}
-
-.company-details button{
-    display: block;
-    outline: none;
-    border: none;
-    background-color: #ff6200;
-    color: white;
-    cursor:pointer;
-}
-
-.copyright{
-    width: 90%;
-    margin-top: 16px;
-    margin-right: auto;
-    margin-left:auto;
-    border-top: white 1px solid;
+.form-container, .bar-nav-container{
+    width: 360px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
-    box-sizing: border-box;
-    padding: 16px 0;
 }
 
-@media screen and (max-width: 1320px) {
+.form-container{
+    top: 15%;
+}
 
+.form-step-container{
+    display: none;
+}
+
+.form-step-container .company-logo{
+    display: inline-block;
+    margin: 18px 0;
+}
+
+.form-step-container h5{
+    margin: 12px 0 36px 0;
+}
+
+.form-step-container button, .form-step-container input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 24px 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-step-container input{
+    border:rgba(0, 0, 0, 0.05) 2px solid;
+}
+
+.form-step-container input.invalid{
+    border: rgba(255, 0, 0, 0.5) 2px solid;
+}
+
+.form-step-container button, .form-container input[type=submit]{
+    color: white;
+    border: 0;
+    background-color: #422F7E;
+}
+
+.form-step-container button:hover, .form-container input[type=submit]:hover{
+    cursor: pointer;
+}
+
+.bar-nav-container{
+    bottom:48px;
+}
+
+.bar-nav-btn{
+    border: rgb(220, 209, 255) 3px solid;
+    border-radius: 12px;
+    width: 64px;
+    margin: 0 2px;
+}
+
+.bar-nav-btn:hover{
+    cursor: pointer
+}
+
+.bar-nav-container .selected{
+    border: #422F7E 3px solid;
+    transition: 1s;
+}
+
+.modal-container{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(120deg, #422F7E 0%, #531eff 100%);
+    width: 420px;
+    height: 360px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.modal-header{
+    padding: 24px 12px;
+    color: white;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header h4{
+    margin-top: 32px;
+}
+
+.modal-body{
+    height: 40%;
+    padding: 12px;
+    color: white;
+}
+
+.modal-body button{
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 24px 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 0;
+    background-color: white;
+    color: #422F7E;
+}
+
+.modal-body button{
+    cursor: pointer;
+}   
+
+@media screen and (max-width: 1140px) {
+
+    body{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sign-up-steps-indicator{
+        display: none;
+    }
+
+    .sign-up-steps{
+        width: 100%;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+}
+
+@media screen and (max-height: 762px) {
     .form-container{
-        margin: 24px 64px;
-    }
-
-}
-
-@media screen and (max-width: 1186px) {
-
-    .form-container {
-        margin: 24px 32px;
-    }
-
-}
-
-@media screen and (max-width: 920px) {
-
-    .form-container {
-        margin: 24px 24px;
-    }
-
-    .testimonial{
-        padding: 16px 48px;
+        top: 5%
     }
 }
 
-@media screen and (max-width: 900px) {
-    
-    .form-container {
-        margin: 16px 16px;
+@media screen and (max-height: 512px) {
+    .form-container{
+        top: 32px
     }
-
-    .footer{
-        padding-top: 16px;
-    }
-    
-    .company-contact, .company-details {
-        float: none;
-        margin: 32px 24px;
-    }
-
-    .copyright{
-        margin-top: 0;
-    }
-}
-
-@media screen and (max-width: 612px) {
-    .testimonial{
-        padding: 16px 24px;
+    .bar-nav-container{
+        bottom: 32px
     }
 }
