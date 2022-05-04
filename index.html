@@ -1,198 +1,67 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="pt-br">
+
     <head>
-        <title>Formulário</title>
-        <meta charset="utf-8" />
+        <title>Untitled Login Screen</title>
+        <meta charset="utf-8" >
+        <meta name="description" content="Tela de login Untitled UI" >
+        <meta name="keywords" content="html, css, js, jquery" >
+        <meta name="author" content="@Robert-Martins" >
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <meta name="description" content="Seja um dev na plataforma RM" />
-        <meta name="keywords" content="dev, rede social, contato, interação, software, desenvolvimento, programação" >
-        <link href="styles/styles.css" type="text/css" rel="stylesheet"/>
+        <link href="css/styles.css" type="text/css" rel="stylesheet"/>
+        <link href="screens/sign-up-screen/styles/styles.css" rel="stylesheet" >
     </head>
+
     <body>
-        <section class="sign-up-steps-indicator" >
+        <section class="sign-in-container">
             <div class="company-info">
                 <div class="company-logo"></div><!--company-logo-->
                 <h3>
                     Untitled UI
                 </h3>
             </div><!--company-info-->
-            <div class="steps-indicator" id="steps-indicator">
-                <button class="step-indicator-btn" id="step-indicator-btn">
-                    <div class="bullet-indicator" id="bullet-ouder-border">
-                        <div class="bullet-indicator-current" id="bullet-inner-border"></div><!--bullet-indicator-check-->
-                    </div><!--bullet-indicator-->
-                    <div class="step-indicator-btn-text">
-                        <h5>
-                            Seus detalhes
-                        </h5>
-                        <h6>
-                            Forneça, por favor, seu nome e melhor e-mail
-                        </h6>
-                    </div><!--step-indicator-btn-text-->
+            <form id="sign-in-form">
+                <h1>
+                    Login
+                </h1>
+                <h4 style="margin-top: 18px;">
+                    Bem-vindo de volta! Insira suas credencias.
+                </h4>
+                <h4 style="font-weight: 500; margin-top: 48px;">
+                    E-mail
+                </h4>
+                <input type="text" name="email" placeholder="Digite seu e-mail" />
+                <h4 style="font-weight: 500;">
+                    Senha
+                </h4>
+                <input type="password" name="password" placeholder="Digite sua senha" />
+                <button class="text-btn">
+                    Esqueci minha senha
                 </button>
-                <button class="step-indicator-btn" id="step-indicator-btn">
-                    <div class="bullet-indicator-todo-container" id="bullet-ouder-border">
-                        <div class="bullet-indicator-todo" id="bullet-inner-border"></div><!--bullet-indicator-check-->
-                    </div><!--bullet-indicator-->
-                    <div class="step-indicator-btn-text">
-                        <h5>
-                            Escolha uma senha
-                        </h5>
-                        <h6>
-                            Escolha uma senha segura
-                        </h6>
-                    </div><!--step-indicator-btn-text-->
+                <input type="submit" name="submit" value="Continuar" id="signin-submit" />
+                <h5>
+                    Não possui uma conta?
+                </h5>
+                <button class="text-btn" id="sign-up-btn">
+                    Cadastre-se
                 </button>
-                <button class="step-indicator-btn" id="step-indicator-btn">
-                    <div class="bullet-indicator-todo-container" id="bullet-ouder-border">
-                        <div class="bullet-indicator-todo" id="bullet-inner-border"></div><!--bullet-indicator-check-->
-                    </div><!--bullet-indicator-->
-                    <div class="step-indicator-btn-text">
-                        <h5>
-                            Convide seus amigos
-                        </h5>
-                        <h6>
-                            Inicie uma nova rede de interações
-                        </h6>
-                    </div><!--step-indicator-btn-text-->
-                </button>
-                <button class="step-indicator-btn" id="step-indicator-btn">
-                    <div class="bullet-indicator-todo-container" id="bullet-ouder-border">
-                        <div class="bullet-indicator-todo" id="bullet-inner-border"></div><!--bullet-indicator-check-->
-                    </div><!--bullet-indicator-->
-                    <div class="step-indicator-btn-text">
-                        <h5>
-                            Sincronize com suas redes sociais
-                        </h5>
-                        <h6>
-                            Compartilhe posts entre suas redes sociais
-                        </h6>
-                    </div><!--step-indicator-btn-text-->
-                </button>
-            </div><!--steps-indicator-->
-            <footer>
-                <h6>
-                    @Robert-Martins
-                </h6>
-            </footer>
-        </section>
-        <section class="sign-up-steps">
-            <div class="form-container" id="form-container">
-                <form id="sign-up-form">
-                    <div class="form-step-container" id="form-step">
-                        <div class="company-logo"></div><!--company-logo-->
-                        <h1>
-                            Seus detalhes
-                        </h1>
-                        <h5>
-                            Forneça seu nome e seu e-mail
-                        </h5>
-                        <input type="text" name="name" required placeholder="Digite seu nome" />
-                        <input type="text" name="email" required placeholder="Digite seu melhor e-mail" />
-                        <button class="step-submit" id="first-step-submit">
-                            Continuar
-                        </button>
-                    </div><!--form-step-container-->
-                    <div class="form-step-container" id="form-step">
-                        <div class="company-logo"></div><!--company-logo-->
-                        <h1>
-                            Escolha uma senha
-                        </h1>
-                        <h5>
-                            A senha deve possuir no mínimo 8 caracteres
-                        </h5>
-                        <input type="password" name="password" required placeholder="Digite sua senha" />
-                        <input type="password" name="password-confirm" required placeholder="Confirme sua senha" />
-                        <button class="step-submit" id="second-step-submit">
-                            Continuar
-                        </button>
-                    </div><!--form-step-container-->
-                    <div class="form-step-container" id="form-step">
-                        <div class="company-logo"></div><!--company-logo-->
-                        <h1>
-                            Convide seus amigos
-                        </h1>
-                        <h5>
-                            Inicie uma nova rede de interações
-                        </h5>
-                        <h6>
-                            Insira os e-mails dos amigos que deseja convidar
-                        </h6>
-                        <input type="text" name="invite-email" placeholder="Insira o e-mail de um amigo" />
-                        <h6>
-                            Caso já tenha convidado seus amigos ou não queria:
-                        </h6>
-                        <button class="step-submit" id="third-step-submit">
-                            Continuar
-                        </button>
-                    </div><!--form-step-container-->
-                    <div class="form-step-container" id="form-step">
-                        <div class="company-logo"></div><!--company-logo-->
-                        <h1>
-                            Sincronize com suas redes sociais
-                        </h1>
-                        <h5>
-                            Compartilhe posts entre suas redes sociais
-                        </h5>
-                        <input type="text" name="Instagram" placeholder="Digite seu Instagram" />
-                        <input type="text" name="Facebook" placeholder="Digite seu Facebook" />
-                        <input type="text" name="LinkedIn" placeholder="Digite seu LinkedIn" />
-                        <input type="text" name="Discord" placeholder="Digite seu Discord" />
-                        <input type="submit" name="submit" value="Finalizar" id="signup-submit" />
-                    </div><!--form-step-container-->
-                </form>
-                <div class="form-step-container" id="sign-up-concluded">
-                    <div class="company-logo"></div><!--company-logo-->
-                    <h1>
-                        Cadastro concluído
-                    </h1>
-                    <h5>
-                        Você receberá um e-mail de confirmação para acesso à nossa plataforma
-                    </h5>
-                    <button class="step-submit">
-                        Ir para a tela de login
-                    </button>
-                    <button class="step-submit">
-                        Voltar à home
-                    </button>
-                </div><!--form-step-container-->
-            </div><!--form-container-->
-            <div class="bar-nav-container" id="bar-nav-container">
-                <button class="bar-nav-btn" id="bar-nav-btn"></button>
-                <button class="bar-nav-btn" id="bar-nav-btn"></button>
-                <button class="bar-nav-btn" id="bar-nav-btn"></button>
-                <button class="bar-nav-btn" id="bar-nav-btn"></button>
-            </div><!--bar-nav-container-->
-        </section>
-
-        <!--Modal de confirmação de cadastro-->
-        <div class="modal-container" id="modal-container">
-            <div class="modal">
-                <div class="modal-header">
-                    <h2>
-                        Deseja concluir seu cadastro?
-                    </h2>
-                    <h4>
-                        Ao pressionar 'Sim' os seus dados serão registrados e 
-                        só poderão ser editados no seu perfil em nossa plataforma.
-                    </h4>
-                </div><!--modal-header-->
-                <div class="modal-body">
-                    <h5>
-                        Deseja continuar?
-                    </h5>
-                    <button class="step-submit" id="not-submit">
-                        Ainda não
-                    </button>
-                    <button class="step-submit" id="submit">
-                        Continuar
-                    </button> 
-                </div><!--modal-body-->
-            </div><!--modal-->
-        </div><!--modal-container-->
+            </form>
+        </section><!--sign-in-container-->
+        <section class="about-company">
+            <div class="container">
+                <div class="teamwork-img"></div><!--teamwork-img-->
+                <h1>
+                    "O talento vence jogos, mas só o trabalho em equipe ganha campeonatos."
+                </h1>
+                <h4>
+                    Michael Jordan
+                </h4>
+            </div><!--container-->
+        </section><!--about-company-->
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="js/functions.js"></script>
     </body>
+
 </html>
