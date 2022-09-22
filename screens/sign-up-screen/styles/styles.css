@@ -163,6 +163,28 @@ input.invalid{
     cursor: pointer;
 }
 
+.form-step-container .strength-container{
+    height: 12px;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-step-container .strength-container .strength-meter{
+    width: 0%;
+    height: 100%;
+    background-color: rgb(255, 55, 55);
+    border-radius: 8px;
+}
+
+.form-step-container .password-strength{
+    margin-bottom: 6px;
+}
+
+.form-step-container .password-strength, .form-step-container .password-strength-message{
+    color: black
+}
+
 .bar-nav-container{
     bottom:48px;
 }

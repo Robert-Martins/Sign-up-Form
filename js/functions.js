@@ -42,6 +42,11 @@ $(document).ready(function(){
         }
     }
 
+    $('#forgot-password-btn').click(function(e){
+        e.preventDefault()
+        location.href = 'screens/forgot-password-screen/index.html'
+    })
+
     $('input[type=submit]').click(function(e){
         e.preventDefault()
         signInValidation()

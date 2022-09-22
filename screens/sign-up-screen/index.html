@@ -51,10 +51,10 @@
                     </div><!--bullet-indicator-->
                     <div class="step-indicator-btn-text">
                         <h5>
-                            Convide seus amigos
+                            Seu endereço
                         </h5>
                         <h6>
-                            Inicie uma nova rede de interações
+                            Inicie uma nova rede de interações em sua região
                         </h6>
                     </div><!--step-indicator-btn-text-->
                 </button>
@@ -105,6 +105,11 @@
                         </h5>
                         <input type="password" name="password" required placeholder="Digite sua senha" />
                         <input type="password" name="password-confirm" required placeholder="Confirme sua senha" />
+                        <h5 class="password-strength-message"></h5>
+                        <h6 class="password-strength"></h6>
+                        <div class="strength-container">
+                            <div class="strength-meter"></div>
+                        </div>
                         <button class="step-submit" id="second-step-submit">
                             Continuar
                         </button>
@@ -112,18 +117,17 @@
                     <div class="form-step-container" id="form-step">
                         <div class="company-logo"></div><!--company-logo-->
                         <h1>
-                            Convide seus amigos
+                            Qual seu CEP?
                         </h1>
                         <h5>
-                            Inicie uma nova rede de interações
+                            Inicie uma nova rede de interações com pessoas de sua região
                         </h5>
                         <h6>
-                            Insira os e-mails dos amigos que deseja convidar
+                            Insira os dados do seu endereço
                         </h6>
-                        <input type="text" name="invite-email" placeholder="Insira o e-mail de um amigo" />
-                        <h6>
-                            Caso já tenha convidado seus amigos ou não queria:
-                        </h6>
+                        <input id="cep" type="text" name="cep" placeholder="Insira o seu CEP" />
+                        <input id="uf" type="text" name="uf" placeholder="Insira o seu estado" />
+                        <input id="city" type="text" name="city" placeholder="Insira a sua cidade" />
                         <button class="step-submit" id="third-step-submit">
                             Continuar
                         </button>
@@ -167,33 +171,8 @@
             </div><!--bar-nav-container-->
         </section>
 
-        <!--Modal de confirmação de cadastro-->
-        <div class="modal-container" id="modal-container">
-            <div class="modal">
-                <div class="modal-header">
-                    <h2>
-                        Deseja concluir seu cadastro?
-                    </h2>
-                    <h4>
-                        Ao pressionar 'Sim' os seus dados serão registrados e 
-                        só poderão ser editados no seu perfil em nossa plataforma.
-                    </h4>
-                </div><!--modal-header-->
-                <div class="modal-body">
-                    <h5>
-                        Deseja continuar?
-                    </h5>
-                    <button class="step-submit" id="not-submit">
-                        Ainda não
-                    </button>
-                    <button class="step-submit" id="submit">
-                        Continuar
-                    </button> 
-                </div><!--modal-body-->
-            </div><!--modal-->
-        </div><!--modal-container-->
-
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="js/functions.js"></script>
     </body>
 </html>
