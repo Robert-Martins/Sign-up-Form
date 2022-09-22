@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Formulário de cadatro</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Seja um dev na plataforma RM" />
+        <meta name="keywords" content="dev, rede social, contato, interação, software, desenvolvimento, programação" >
+        <link href="../../css/styles.css" rel="stylesheet" >
+        <link href="styles/styles.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <section class="sign-up-steps-indicator" >
+            <div class="company-info">
+                <div class="company-logo"></div><!--company-logo-->
+                <h3>
+                    Untitled UI
+                </h3>
+            </div><!--company-info-->
+            <div class="steps-indicator" id="steps-indicator">
+                <button class="step-indicator-btn" id="step-indicator-btn">
+                    <div class="bullet-indicator" id="bullet-ouder-border">
+                        <div class="bullet-indicator-current" id="bullet-inner-border"></div><!--bullet-indicator-check-->
+                    </div><!--bullet-indicator-->
+                    <div class="step-indicator-btn-text">
+                        <h5>
+                            Seus detalhes
+                        </h5>
+                        <h6>
+                            Forneça, por favor, seu nome e melhor e-mail
+                        </h6>
+                    </div><!--step-indicator-btn-text-->
+                </button>
+                <button class="step-indicator-btn" id="step-indicator-btn">
+                    <div class="bullet-indicator-todo-container" id="bullet-ouder-border">
+                        <div class="bullet-indicator-todo" id="bullet-inner-border"></div><!--bullet-indicator-check-->
+                    </div><!--bullet-indicator-->
+                    <div class="step-indicator-btn-text">
+                        <h5>
+                            Escolha uma senha
+                        </h5>
+                        <h6>
+                            Escolha uma senha segura
+                        </h6>
+                    </div><!--step-indicator-btn-text-->
+                </button>
+                <button class="step-indicator-btn" id="step-indicator-btn">
+                    <div class="bullet-indicator-todo-container" id="bullet-ouder-border">
+                        <div class="bullet-indicator-todo" id="bullet-inner-border"></div><!--bullet-indicator-check-->
+                    </div><!--bullet-indicator-->
+                    <div class="step-indicator-btn-text">
+                        <h5>
+                            Seu endereço
+                        </h5>
+                        <h6>
+                            Inicie uma nova rede de interações em sua região
+                        </h6>
+                    </div><!--step-indicator-btn-text-->
+                </button>
+                <button class="step-indicator-btn" id="step-indicator-btn">
+                    <div class="bullet-indicator-todo-container" id="bullet-ouder-border">
+                        <div class="bullet-indicator-todo" id="bullet-inner-border"></div><!--bullet-indicator-check-->
+                    </div><!--bullet-indicator-->
+                    <div class="step-indicator-btn-text">
+                        <h5>
+                            Sincronize com suas redes sociais
+                        </h5>
+                        <h6>
+                            Compartilhe posts entre suas redes sociais
+                        </h6>
+                    </div><!--step-indicator-btn-text-->
+                </button>
+            </div><!--steps-indicator-->
+            <footer>
+                <h6>
+                    @Robert-Martins
+                </h6>
+            </footer>
+        </section>
+        <section class="sign-up-steps">
+            <div class="form-container" id="form-container">
+                <form id="sign-up-form">
+                    <div class="form-step-container" id="form-step">
+                        <div class="company-logo"></div><!--company-logo-->
+                        <h1>
+                            Seus detalhes
+                        </h1>
+                        <h5>
+                            Forneça seu nome e seu e-mail
+                        </h5>
+                        <input type="text" name="name" required placeholder="Digite seu nome" />
+                        <input type="text" name="email" required placeholder="Digite seu melhor e-mail" />
+                        <button class="step-submit" id="first-step-submit">
+                            Continuar
+                        </button>
+                    </div><!--form-step-container-->
+                    <div class="form-step-container" id="form-step">
+                        <div class="company-logo"></div><!--company-logo-->
+                        <h1>
+                            Escolha uma senha
+                        </h1>
+                        <h5>
+                            A senha deve possuir no mínimo 8 caracteres
+                        </h5>
+                        <input type="password" name="password" required placeholder="Digite sua senha" />
+                        <input type="password" name="password-confirm" required placeholder="Confirme sua senha" />
+                        <h5 class="password-strength-message"></h5>
+                        <h6 class="password-strength"></h6>
+                        <div class="strength-container">
+                            <div class="strength-meter"></div>
+                        </div>
+                        <button class="step-submit" id="second-step-submit">
+                            Continuar
+                        </button>
+                    </div><!--form-step-container-->
+                    <div class="form-step-container" id="form-step">
+                        <div class="company-logo"></div><!--company-logo-->
+                        <h1>
+                            Qual seu CEP?
+                        </h1>
+                        <h5>
+                            Inicie uma nova rede de interações com pessoas de sua região
+                        </h5>
+                        <h6>
+                            Insira os dados do seu endereço
+                        </h6>
+                        <input id="cep" type="text" name="cep" placeholder="Insira o seu CEP" />
+                        <input id="uf" type="text" name="uf" placeholder="Insira o seu estado" />
+                        <input id="city" type="text" name="city" placeholder="Insira a sua cidade" />
+                        <button class="step-submit" id="third-step-submit">
+                            Continuar
+                        </button>
+                    </div><!--form-step-container-->
+                    <div class="form-step-container" id="form-step">
+                        <div class="company-logo"></div><!--company-logo-->
+                        <h1>
+                            Sincronize com suas redes sociais
+                        </h1>
+                        <h5>
+                            Compartilhe posts entre suas redes sociais
+                        </h5>
+                        <input type="text" name="Instagram" placeholder="Digite seu Instagram" />
+                        <input type="text" name="Facebook" placeholder="Digite seu Facebook" />
+                        <input type="text" name="LinkedIn" placeholder="Digite seu LinkedIn" />
+                        <input type="text" name="Discord" placeholder="Digite seu Discord" />
+                        <input type="submit" name="submit" value="Finalizar" id="signup-submit" />
+                    </div><!--form-step-container-->
+                </form>
+                <div class="form-step-container" id="sign-up-concluded">
+                    <div class="company-logo"></div><!--company-logo-->
+                    <h1>
+                        Cadastro concluído
+                    </h1>
+                    <h5>
+                        Você receberá um e-mail de confirmação para acesso à nossa plataforma
+                    </h5>
+                    <button class="step-submit">
+                        Ir para a tela de login
+                    </button>
+                    <button class="step-submit">
+                        Voltar à home
+                    </button>
+                </div><!--form-step-container-->
+            </div><!--form-container-->
+            <div class="bar-nav-container" id="bar-nav-container">
+                <button class="bar-nav-btn" id="bar-nav-btn"></button>
+                <button class="bar-nav-btn" id="bar-nav-btn"></button>
+                <button class="bar-nav-btn" id="bar-nav-btn"></button>
+                <button class="bar-nav-btn" id="bar-nav-btn"></button>
+            </div><!--bar-nav-container-->
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/functions.js"></script>
+    </body>
+</html>
