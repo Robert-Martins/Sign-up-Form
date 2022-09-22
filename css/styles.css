@@ -60,19 +60,19 @@ h6{
     display: none;
 }
 
-form#sign-in-form{
+form{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-form#sign-in-form h5{
+form h5{
     display: inline-block;
     margin-right: 4px;
 }
 
-form#sign-in-form .text-btn{
+form .text-btn{
     background-color: white;
     color: #422F7E;
     font-size: 14px;
@@ -121,4 +121,8 @@ form#sign-in-form .text-btn{
     background-repeat: no-repeat;
     background-size: contain;
     margin-bottom: 64px;
+}
+
+input.invalid{
+    border: rgba(255, 0, 0, 0.5) 2px solid;
 }
